@@ -3,7 +3,7 @@ import Carousel from './components/Carousel';
 
 function App() {
   return (
-    <body className='bg-gradient-to-br from-pink-400 to-purple-300 min-h-full'>
+    <body className='bg-gradient-to-br from-pink-400 to-purple-300 w-full h-full'>
       <Carousel />
     </body>
   );

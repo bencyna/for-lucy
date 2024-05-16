@@ -44,14 +44,12 @@ const Carousel = () => {
             Prev
           </button>
           <div className='h-full'>
+          <p>{data[currentIndex].date}</p>
           <img
             src={images[currentIndex]}
             alt="carousel"ßß
             className="rounded-lg shadow-lg max-w-full max-h-full transition duration-500 ease-in-out transform hover:scale-110 cursor-pointer"
           />
-          <p>
-            {data[currentIndex].text}
-          </p>
           </div>
           <button
             className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
@@ -59,6 +57,9 @@ const Carousel = () => {
           >
             Next
           </button>
+          <p className=' w-1/2'>
+            {data[currentIndex].text}
+          </p>
         </div>
       );
     };

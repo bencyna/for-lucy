@@ -36,32 +36,35 @@ const Carousel = () => {
     };
 
     return (
-        <div className="relative w-full h-96 flex mt-10 items-center justify-center">
-          <button
-            className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-            onClick={handlePrev}
-          >
-            Prev
-          </button>
-          <div className='h-full'>
-          <p>{data[currentIndex].date}</p>
+      <div className="relative w-full h-screen flex flex-col items-center justify-center mt-10">
+      <div className="flex items-center justify-center w-full relative">
+        <button
+          className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          onClick={handlePrev}
+        >
+          Prev
+        </button>
+        <div className='flex flex-col items-center'>
           <img
             src={images[currentIndex]}
-            alt="carousel"ßß
-            className="rounded-lg shadow-lg max-w-full max-h-full transition duration-500 ease-in-out transform hover:scale-110 cursor-pointer"
+            alt="carousel"
+            className="rounded-lg shadow-lg max-w-full max-h-96 transition duration-500 ease-in-out transform hover:scale-110 cursor-pointer"
           />
-          </div>
-          <button
-            className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-            onClick={handleNext}
-          >
-            Next
-          </button>
-          <p className=' w-1/2'>
-            {data[currentIndex].text}
-          </p>
+          <p className="mt-4 text-center">{data[currentIndex].date}</p>
         </div>
-      );
-    };
+        <button
+          className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          onClick={handleNext}
+        >
+          Next
+        </button>
+      </div>
+      <p className="mt-10 text-center max-w-2xl">
+        {data[currentIndex].text}
+      </p>
+    </div>
+  );
+};
+
 
 export default Carousel;

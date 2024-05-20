@@ -7,7 +7,7 @@ const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [images, setImages] = useState([]);
 
-    const favourites = []
+    const favourites = [0, 14, 17, 28, 36, 37, 42, 47, 58, 71]
     // use index of favouties 
     // then in html loop through this array
     // display the date from the data indexed
@@ -38,16 +38,18 @@ const Carousel = () => {
         );
     };
 
+
     return (
       <div className="relative w-full h-screen flex flex-col items-center justify-center mt-10">
-         <div className="fixed top-0 w-full flex justify-center bg-gray-100 bg-pink-400">
-          <div className="w-full max-w-screen-xl grid grid-cols-10 border-b border-gray-200">
-            {Array.from({ length: 10 }).map((_, index) => (
+        <div className="fixed top-0 w-full flex justify-center bg-pink-300">
+          <div className="w-full max-w-screen-xl grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 border-b border-gray-200">
+            {favourites.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center h-12 border-r border-white text-black hover:text-white hover:bg-black transition duration-300 ease-in-out  cursor-pointer"
+                onClick={setCurrentIndex(item)}
+                className="flex items-center justify-center h-12 border-r border-white text-black hover:text-white hover:bg-black transition duration-300 ease-in-out overflow-hidden whitespace-nowrap"
               >
-                Column {index + 1}
+                <span className="truncate px-2">{data[item].date}</span>
               </div>
             ))}
           </div>

@@ -42,11 +42,11 @@ const Carousel = () => {
     return (
       <div className="relative w-full h-screen flex flex-col items-center justify-center mt-10">
         <div className="fixed top-0 w-full flex justify-center bg-pink-300">
-          <div className="w-full max-w-screen-xl grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 border-b border-gray-200">
+          <div className="w-full max-w-screen-xl grid grid-cols-5 md:grid-cols-5 lg:grid-cols-10 border-b border-gray-200">
             {favourites.map((item, index) => (
               <div
                 key={index}
-                onClick={setCurrentIndex(item)}
+                onClick={() => setCurrentIndex(index)}
                 className="flex items-center justify-center h-12 border-r border-white text-black hover:text-white hover:bg-black transition duration-300 ease-in-out overflow-hidden whitespace-nowrap"
               >
                 <span className="truncate px-2">{data[item].date}</span>
@@ -56,7 +56,7 @@ const Carousel = () => {
         </div>
       <div className="flex items-center justify-center w-full relative">
         <button
-          className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="z-10 absolute left-10 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
           onClick={handlePrev}
         >
           Prev

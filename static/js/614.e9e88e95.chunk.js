@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgratitude=self.webpackChunkgratitude||[]).push([[614],{614:(e,t,a)=>{e.exports=a.p+"static/media/jan12.c5029eb4c32ecf1c0a20.jpeg"}}]);

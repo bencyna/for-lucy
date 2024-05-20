@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgratitude=self.webpackChunkgratitude||[]).push([[212],{212:(e,t,c)=>{e.exports=c.p+"static/media/dec2(1).c954f9ffe98086d5c294.jpeg"}}]);

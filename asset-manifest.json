@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/for-lucy/static/css/main.a8c7e8ec.css",
-    "main.js": "/for-lucy/static/js/main.393f62b3.js",
+    "main.css": "/for-lucy/static/css/main.46b371cd.css",
+    "main.js": "/for-lucy/static/js/main.bd09ecf5.js",
     "static/js/344.4f420124.chunk.js": "/for-lucy/static/js/344.4f420124.chunk.js",
     "static/js/325.d9ebdca7.chunk.js": "/for-lucy/static/js/325.d9ebdca7.chunk.js",
     "static/js/468.0fbf8186.chunk.js": "/for-lucy/static/js/468.0fbf8186.chunk.js",
@@ -80,12 +80,12 @@
     "static/media/may6.jpeg": "/for-lucy/static/media/may6.4153c75f364b3527117b.jpeg",
     "static/media/loveyou.jpeg": "/for-lucy/static/media/loveyou.45b0437385c8ccbc2217.jpeg",
     "index.html": "/for-lucy/index.html",
-    "main.a8c7e8ec.css.map": "/for-lucy/static/css/main.a8c7e8ec.css.map",
-    "main.393f62b3.js.map": "/for-lucy/static/js/main.393f62b3.js.map",
+    "main.46b371cd.css.map": "/for-lucy/static/css/main.46b371cd.css.map",
+    "main.bd09ecf5.js.map": "/for-lucy/static/js/main.bd09ecf5.js.map",
     "453.5f3cef27.chunk.js.map": "/for-lucy/static/js/453.5f3cef27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8c7e8ec.css",
-    "static/js/main.393f62b3.js"
+    "static/css/main.46b371cd.css",
+    "static/js/main.bd09ecf5.js"
   ]
 }
